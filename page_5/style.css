@@ -1,0 +1,370 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+/*초기화*/
+html,body,div,header,nav,section,aside,article,footer,figure,
+figcaption,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,fieldset{
+	margin:0;
+	padding:0;
+}
+input,button,select,textarea {
+  font-family: inherit;
+}
+ul,ol{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+	color:inherit;
+}
+a:hover,a:focus{
+	color:#03a67b;
+}
+.hidden{
+    position:absolute;
+    left:-9999em;
+  }
+
+
+/*본문 셋팅*/
+ html{
+ 	font-size:10px;
+  }
+ body{
+    font-family: 'Poppins', sans-serif;
+ 		font-size:1.4rem;
+ 		color:#333333;
+   }
+   /*공통요소*/
+   p{
+   	color:rgba(51, 51, 51, 0.6);
+   	font-size:1.6rem;
+    line-height:1.5;
+
+   }
+   *{
+  	 box-sizing:border-box;
+   }
+   .small-title{
+     font-weight:600;
+     font-size:1.4rem;
+     line-height: 1.14;
+     letter-spacing: 3.5px;
+     text-transform: uppercase;
+     color:#333333;
+   }
+   .detail-title{
+     font-weight: 500;
+     color: rgba(51, 51, 51, 0.25);
+     line-height: 1.5;
+   }
+
+   body .wrap{
+   	width:1440px;
+   	margin:0 auto;
+   	height:auto;
+   }
+   header,main,section,footer{
+   	width:100%
+   }
+
+   section h2{
+   	font-size:44px;
+   	font-weight:600;
+   	 }
+  /*헤더*/
+  header{
+  	padding:70px 150px 0 150px;
+
+  }
+  header .logo {
+  	display: inline-block;
+
+  }
+  nav{
+  	display: inline-block;
+
+  }
+ .menu-list{
+     margin-top: 5px;
+ }
+  .menu-list li {
+  	float:left;
+  	margin-left: 15px;
+
+  }
+
+  .member{
+  	text-align:right;
+  	margin-top:-45px;
+
+  }
+  .member-list li,.member-list li a{
+  	display: inline-block;
+
+  }
+  .member-list li a{
+  margin-left:15px;
+  }
+
+  .member-list .signup-btn{
+  	padding:10px 36px;
+  	border:1px solid #03a67b;
+  	border-radius:4px;
+  	font-weight:500;
+  	color:#03a67b;
+  }
+  .signup-btn:hover{
+  	font-weight:600;
+  }
+
+/*섹션1 - intro*/
+.intro {
+  padding-top:146px;
+  height:690px;
+  background:url(img/iphone.png) no-repeat ;
+  text-align: center;
+  border-bottom:1px solid #ebebeb;
+  position: relative;
+}
+.intro h2 {
+  font-size:5.2rem;
+  font-weight:600;
+  line-height: 1.12;
+  letter-spacing: -1.3px;
+}
+.intro p {
+  width:774px;
+  margin-left:333px;
+  margin-top: 20px;
+}
+.intro .memo1{
+  width:342px;
+  height: 76px;
+  background: #03a67b;
+  border-radius:4px;
+  color:#fff;
+  position: absolute;
+  top:378px;
+  left:305px;
+  padding:18px 25px;
+
+}
+.intro .memo2{
+  width:342px;
+  height: 94px;
+  background: #03a67b;
+  border-radius:4px;
+  color:#fff;
+  position: absolute;
+  top:499px;
+  right:273px;
+  padding: 13px 20px 15px 25px;
+}
+/*섹션2 - blokk-desc1*/
+.blokk-desc1{
+  padding:100px 178px 100px 150px;
+  background: url(img/01.png) no-repeat 834px 186px;
+  position: relative;
+  height:600px;
+}
+.blokk-desc1 .img-brief{
+  margin-top: 132px;
+
+}
+.blokk-desc1 p , .blokk-desc1 h2{
+  width:426px;
+  margin-left:684px;
+  }
+.blokk-desc1 img {
+  position: absolute;
+  top:100px;
+  left:150px;
+}
+/*섹션2 - blokk-desc2*/
+.blokk-desc2{
+  background:url(img/02.png) no-repeat 150px 186px;
+  position: relative;
+  height:600px;
+
+}
+.blokk-desc2 .img-brief{
+  margin-top: 232px;
+  display: inline-block;
+
+}
+.blokk-desc2 p , .blokk-desc2 h2{
+  width:426px;
+  margin-left:152px;
+  }
+.blokk-desc2 img {
+  position: absolute;
+  top:100px;
+  right:150px;
+}
+
+/*섹션3 - key-features*/
+.key-features{
+  padding:103px 193px 109px 149px;
+  background:#fcfcfc ;
+}
+.key-features >p {
+  width:685px;
+  margin-bottom:58px;
+}
+.feature-list{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+
+}
+.feature-list .list-box{
+  display: inline-block;
+  width:517px;
+  }
+.list-box .small-title p{
+
+}
+.list-box .small-title{
+  margin-bottom: 25px;
+  margin-top: 30px;
+  }
+.feature-list .list-box::before{
+  content:url(img/check.png);
+  display: inline-block;
+  float:left;
+  margin-right: 31px;
+}
+
+
+
+/*섹션4 - portfolio*/
+.portfolio{
+  padding:99px 163px 99px 164px;
+  text-align: center;
+  position: relative;
+}
+.portfolio> p {
+  width:685px;
+  margin: 0  0 55px 214px;
+}
+.portfolio-list{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.portfolio-list figure {
+  width:340px;
+  height:377px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.04);
+  }
+.portfolio-list .small-title{
+    margin-top: 32px;
+
+}
+.portfolio-list .detail-title{
+    margin-top: 11px;
+}
+.portfolio-list .brief{
+  width:212px;
+  margin-left: 64px;
+  margin-top:10px ;
+  color: rgba(51, 51, 51, 0.5);
+}
+.portfolio button{
+  cursor:pointer;
+}
+.portfolio .left-btn{
+  position: absolute;
+  top:426px;
+  left:100px;
+  width:20px;
+  height:38px;
+  border:0;
+  overflow: hidden;
+  text-indent:20px;
+  background:url(img/arrow-left.png) no-repeat;
+}
+.portfolio .right-btn{
+  position: absolute;
+  top:426px;
+  right:100px;
+  width:20px;
+  height:38px;
+  border:0;
+  overflow: hidden;
+  text-indent:20px;
+  background:url(img/arrow-right.png) no-repeat;
+}
+/* 섹션 5 - crew*/
+.crew{
+  padding:101px 150px 93px 150px;
+  text-align: center;
+  background: #fcfcfc;
+}
+.crew-list{
+  display: flex;
+  justify-content:space-between;
+}
+.crew-list>li {
+  width:270px;
+  height:315px;
+  background: #fff;
+  margin-top: 70px;
+  padding:48px 82px 37px;
+}
+.crew-list>li::before{
+  content:url(img/user-no-circle.png);
+  display: block;
+}
+.crew-list .small-title{
+  margin-top: 31px;
+}
+.crew-list .detail-title{
+  font-weight: 600;
+  color: rgba(51, 51, 51, 0.4);
+  font-size:1.4rem;
+  margin:11px 0 ;
+}
+.crew-social li , .crew-social li a {
+  display: inline-block;
+}
+.crew-social li a{
+  margin-right:10px;
+}
+
+/* 섹션 6 - contact*/
+.contact{
+  padding:103px 581px 101px;
+  text-align: center;
+  border-bottom:1px solid #ebebeb;
+}
+.contact-social li,.contact-social li a {
+  display:inline-block;
+}
+.contact-social li a{
+  margin-right:14px;
+  margin-top: 29px;
+}
+
+/*footer*/
+footer{
+  padding:84px 307px 90px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo p {
+  width:213px;
+  margin-top: 29px;
+}
+footer ul {
+  margin-top: 35px;
+}
+footer li a {
+  line-height: 2.25;
+  color: rgba(51, 51, 51, 0.7);
+  font-size:1.6rem;
+}
