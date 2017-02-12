@@ -1,0 +1,37 @@
+@import ../utils/mixins
+@import ../utils/variables
+@import ../utils/functions
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css)
+
+
+// 박스 사이징 설정
+*, *::before, *::after
+  box-sizing: inherit //부모의 box-sizing  설정을 상속
+
+
+html
+  box-sizing: border-box
+
+#{$margin-padding-reset}
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Spoqa Han Sans', 'Sans-serif'
+  font-size: rem(16px)
+
+#{$font-family-inherit}
+  font-family: inherit
+
+
+ul, ol
+  list-style-type: none
+a
+  text-decoration: none
+  color: $base-font-color
+  &:hover , &:focus
+    color: $font-hover-color
+
+h2
+  text-align: center
